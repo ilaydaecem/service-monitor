@@ -35,8 +35,7 @@ http://localhost:8081
 
 ## Screenshot
 
-> Dashboard showing real-time status of monitored services.
-
+![Dashboard](screenshot.png)
 ## About
 
 Built by **Ilayda Öztürk** as a portfolio project.  

@@ -29,12 +29,12 @@
     <div class="card" th:each="result : ${results}">
         <div class="card-header">
             <span class="url" th:text="${result.url}"></span>
-            <span class="badge up" th:if="${result.isUp()}">UP</span>
-            <span class="badge down" th:unless="${result.isUp()}">DOWN</span>
+            <span class="badge up" th:if="${result.up}">UP</span>
+            <span class="badge down" th:unless="${result.up}">DOWN</span>
         </div>
-        <div class="stat">Durum kodu: <span th:text="${result.statusCode()}"></span></div>
-        <div class="stat">Yanıt süresi: <span th:text="${result.responseTimeMs()} + ' ms'"></span></div>
-        <div class="stat">Son kontrol: <span th:text="${result.checkedAt()}"></span></div>
+        <div class="stat">Durum kodu: <span th:text="${result.statusCode}"></span></div>
+        <div class="stat">Yanıt süresi: <span th:text="${result.responseTimeMs} + ' ms'"></span></div>
+        <div class="stat">Son kontrol: <span th:text="${result.checkedAt}"></span></div>
     </div>
 </div>
 
